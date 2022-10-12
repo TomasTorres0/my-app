@@ -1,4 +1,13 @@
+.description {
+ font-family: cursive;
+ font-size: 24px;
+ text-align: center;
+ margin-top: 1.5rem;
+ color: #00008b;
+}
+
 .greeting {
  text-decoration: underline;
  color: gray;
+ text-align: center;
 }

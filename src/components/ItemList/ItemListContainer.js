@@ -23,7 +23,10 @@ const ItemListContainer = ({ greeting }) => {
 
   return (
     <Container>
-      <h1>Productos</h1>
+      <p className="description">
+        Las posibilidades de nuestros muebles son infinitas... Una visita a nuestro 
+        Showroom le permite ver la extension de nuestra propuesta.
+      </p>
       <h3 className="greeting">{greeting}</h3>
       <ItemList products={products} />
     </Container>

@@ -21,6 +21,9 @@ const Item = ({ product }) => {
           <Button variant="primary">
              Ver Detalles
           </Button>
+          <Button variant="primary">
+             Comprar
+          </Button>
         </Link>
        
       </Card.Body>

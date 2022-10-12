@@ -7,11 +7,11 @@ const NavBar = () => {
     <Navbar bg="dark" variant="dark">
       <Container>
         <Navbar.Brand as={Link} to='/'>
-          Tienda de Productos
+          ShowRoom
         </Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link as={Link} to='/'>
-              Home
+              Inicio
           </Nav.Link>
           <Nav.Link as={Link} to='/category/sillones'>Sillones</Nav.Link>
           <Nav.Link as={Link} to='/category/respaldos'>Respaldos</Nav.Link>
