@@ -1,0 +1,13 @@
+.container-dark {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .container-dark h1 {
+    color: white;
+  }
+  
+  .item-dark {
+    color: grey;
+  }
