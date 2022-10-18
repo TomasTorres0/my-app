@@ -1,4 +1,4 @@
-const exiteError = false;
+// const exiteError = false;
 
 const MyComponent = ({ value, name, saludar, children }) => {
   // console.log(value);

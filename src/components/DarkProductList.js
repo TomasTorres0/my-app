@@ -16,13 +16,13 @@ const Switch = () => {
   )
 } 
 
-const Item = ({product, secondaryClass}) => {
+const Item = ({product}) => {
   const {isDarkMode} = useContext(ThemeContext);
   const className = isDarkMode ? 'item-dark' : '';
 
   return (
     <h4>
-      <li className={`${className} ${secondaryClass || ''} li-success`}>
+      <li className={className}>
         {product.title}
       </li>
     </h4>
