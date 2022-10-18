@@ -3,7 +3,7 @@ import MyComponent from './components/MyComponent';
 import NavBar from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './components/ItemList/ItemListContainer';
-import MapComponent from './components/MapComponent';
+
 import { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Cart from './components/Cart/Cart';
@@ -13,16 +13,18 @@ import Events from './components/Events';
 import Intercambiabilidad from './components/Intercambiabilidad';
 import DarkProductList from './components/DarkProductList';
 import CacheContext, { CacheProvider } from './contexts/CacheContext';
-import Condionales from './components/Condionales';
+
 import FavoritosContext, { FavoritosProvider } from './contexts/FavoritosContext';
 import Favoritos from './components/Favoritos';
 import { doc, getFirestore, getDoc, collection, getDocs } from 'firebase/firestore';
 import { CartProvider } from './contexts/CartContext';
+import { createAllProducts } from './utils/products';
 
 function App() {
 
+    
     return (
-      <BrowserRouter basename='/reactjs38100'>
+      <BrowserRouter>
         <CacheProvider>
           <CartProvider>
             <NavBar />
