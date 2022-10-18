@@ -12,23 +12,16 @@ const Item = ({ product }) => {
           $ {product.price}
         </Card.Text>
         <Card.Text>
-         {product.description}
+          {product.description}
         </Card.Text>
-        <Card.Text>
-         {product.color}
-        </Card.Text>
-        <Link to={`/item/${product.id}`}>
-          <Button variant="primary">
-             Ver Detalles
-          </Button>
-          <Button variant="primary">
-             Comprar
-          </Button>
-        </Link>
-       
+          <Link to={`/item/${product.id}`}>
+            <Button variant="primary">
+              Ver detalle
+            </Button>
+          </Link>
       </Card.Body>
     </Card>
   );
 }
-
+ 
 export default Item;

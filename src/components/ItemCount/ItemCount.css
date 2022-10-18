@@ -1,0 +1,10 @@
+.itemCountContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .itemCountContainer div {
+    display: flex;
+  }

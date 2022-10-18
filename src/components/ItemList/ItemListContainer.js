@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import { useEffect, useState } from 'react';
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
-import { getAllProducts, getProducts, getProductsByCategory } from '../../utils/products';
+import { getAllProducts, getProductsByCategory } from '../../utils/products';
 
 const ItemListContainer = ({ greeting }) => {
   const { categoryId } = useParams();
@@ -23,10 +23,7 @@ const ItemListContainer = ({ greeting }) => {
 
   return (
     <Container>
-      <p className="description">
-        Las posibilidades de nuestros muebles son infinitas... Una visita a nuestro 
-        Showroom le permite ver la extension de nuestra propuesta.
-      </p>
+      <h1>Productos</h1>
       <h3 className="greeting">{greeting}</h3>
       <ItemList products={products} />
     </Container>
